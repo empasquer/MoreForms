@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Preferences</title>
+</head>
+<body>
+    <h1>Show Preferences</h1>
+    <div th:if="${vacationPreferences != null}">
+        <p>Name: <span th:text="${vacationPreferences.name}"></span></p>
+        <p>Keywords: <span th:text="${vacationPreferences.keywords}"></span></p>
+        <p>Destination: <span th:text="${vacationPreferences.destination}"></span></p>
+        <p>Type Of Travels: <span th:text="${vacationPreferences.typeOfTravel.toString()}"></span></p>
+        <p>Additional features: <span th:text="${vacationPreferences.features}"></span></p>
+
+    </div>
+
+</body>
+</html>
