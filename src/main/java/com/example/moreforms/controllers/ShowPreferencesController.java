@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 public class ShowPreferencesController {
     @PostMapping("/show-preferences")
     public String showPreferences(Model model, @RequestParam String name, @RequestParam String keywords,
-                                  @RequestParam String destination, @RequestParam TypeOfTravels typeOfTravels,
-                                  @RequestParam ArrayList<String> features) {
+                                  @RequestParam String destination, @RequestParam TypeOfTravels typeOfTravel,
+                                  @RequestParam(name = "features") ArrayList<String> features) {
 
 
         VacationPreferences vacationPreferences = new VacationPreferences();
@@ -22,7 +23,7 @@ public class ShowPreferencesController {
         vacationPreferences.setName(name);
         vacationPreferences.setKeywords(keywords);
         vacationPreferences.setDestination(destination);
-        vacationPreferences.setTypeOfTravel(typeOfTravels);
+        vacationPreferences.setTypeOfTravel(typeOfTravel);
         vacationPreferences.setFeatures(features);
 
         model.addAttribute(vacationPreferences);
