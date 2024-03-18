@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Show Preferences</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Show Preferences</h1>
-    <div th:if="${vacationPreferences != null}">
-        <p>Name: <span th:text="${vacationPreferences.name}"></span></p>
-        <p>Keywords: <span th:text="${vacationPreferences.keywords}"></span></p>
-        <p>Destination: <span th:text="${vacationPreferences.destination}"></span></p>
-        <p>Type Of Travels: <span th:text="${vacationPreferences.typeOfTravel.toString()}"></span></p>
-        <p>Additional features: <span th:text="${vacationPreferences.features}"></span></p>
-
-    </div>
-
+<h1>Show Preferences</h1>
+<div class="show-preferences">
+    <p class="category">Name: <span th:text="${vacationPreferences.name}"></span></p>
+    <p class="category">Keywords: <span th:text="${vacationPreferences.keywords}"></span></p>
+    <p class="category">Destination: <span th:text="${vacationPreferences.destination}"></span></p>
+    <p class="category">Type Of Travels: <span th:text="${vacationPreferences.typeOfTravel.toString()}"></span></p>
+    <p class="category">Additional features: <span th:text="${vacationPreferences.features}"></span></p>
+</div>
 </body>
+
 </html>

@@ -1,0 +1,68 @@
+body {
+    font-family: monospace;
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.category span {
+    color: #333;
+}
+
+.form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    height: 500px;
+}
+
+.fieldset {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input,
+.textarea,
+.select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.radio {
+    margin-right: 10px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.submit {
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.submit:hover {
+    background-color: darkorange;
+}
+
+.category, .title {
+    color: orange;
+}

@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Home page</h1>
-<form action="/show-preferences" method="post">
-    <fieldset>
-        <label for="name">Name</label>
-        <input id="name" name="name" type="text">
+<h1 class="title">Home page</h1>
+<div class="form-container">
+
+
+<form class="form" action="/show-preferences" method="post">
+    <fieldset class="fieldset">
+        <label class="label" for="name">Name</label>
+        <input class="input" id="name" name="name" type="text">
     </fieldset>
 
-    <fieldset>
-        <label for="keywords">Keywords</label>
-        <textarea id="keywords" name="keywords" type="text" rows="4" cols="50"></textarea>
+    <fieldset class="fieldset">
+        <label class="label" for="keywords">Keywords</label>
+        <textarea class="textarea" id="keywords" name="keywords" type="text" rows="4" cols="50"></textarea>
     </fieldset>
 
-    <fieldset>
-        <label for="destination">Destination</label>
-        <select id="destination" name="destination">
+    <fieldset class="fieldset">
+        <label class="label" for="destination">Destination</label>
+        <select class="select" id="destination" name="destination">
             <option value="paris">Paris</option>
             <option value="neworleans">New Orleans</option>
             <option value="copenhagen">Copenhagen</option>
@@ -27,33 +31,34 @@
         </select>
     </fieldset>
 
-    <fieldset>
-        <label>Type of travel</label>
-        <input type="radio" name="typeOfTravel" id="VACATION" value="VACATION">
-        <label for="VACATION">Vacation</label>
+    <fieldset class="fieldset">
+        <label class="label">Type of travel</label>
+        <input class="radio" type="radio" name="typeOfTravel" id="VACATION" value="VACATION">
+        <label class="radio-label" for="VACATION">Vacation</label>
 
-        <input type="radio" name="typeOfTravel" id="BUSINESS" value="BUSINESS">
-        <label for="BUSINESS">Business</label>
+        <input class="radio" type="radio" name="typeOfTravel" id="BUSINESS" value="BUSINESS">
+        <label class="radio-label" for="BUSINESS">Business</label>
 
-        <input type="radio" name="typeOfTravel" id="ADVENTURE" value="ADVENTURE">
-        <label for="ADVENTURE">Adventure</label>
+        <input class="radio" type="radio" name="typeOfTravel" id="ADVENTURE" value="ADVENTURE">
+        <label class="radio-label" for="ADVENTURE">Adventure</label>
     </fieldset>
 
 
-    <fieldset>
-        <label>Additional features</label>
+    <fieldset class="fieldset">
+        <label class="label">Additional features</label>
 
-        <input type="checkbox" id="wifi" name="features" value="wifi">
-        <label for="wifi">Wi-fi</label>
+        <input class="checkbox" type="checkbox" id="wifi" name="features" value="wifi">
+        <label class="checkbox-label" for="wifi">Wi-fi</label>
 
-        <input type="checkbox" id="breakfast" name="features" value="breakfast">
-        <label for="breakfast">Breakfast</label>
+        <input class="checkbox" type="checkbox" id="breakfast" name="features" value="breakfast">
+        <label class="checkbox-label" for="breakfast">Breakfast</label>
 
-        <input type="checkbox" id="transport" name="features" value="transport">
-        <label for="transport">Transport</label>
+        <input class="checkbox" type="checkbox" id="transport" name="features" value="transport">
+        <label class="checkbox-label" for="transport">Transport</label>
     </fieldset>
 
-    <input type="submit" value="Send">
+    <input class="submit" type="submit" value="Send">
 </form>
+</div>
 </body>
 </html>
